@@ -259,7 +259,7 @@
 		</source>
 	</sources>
 	<testobjects>
-		<testobject name="is_value_in_range" description="" specification="" comment="" id="1028" state_mask="0x10001188" uuid="1428218a-e213-4bc4-84fb-6b04e16fa1a4" testdata_id="1" type="Normal" testitem_state_mask="0x80">
+		<testobject name="is_value_in_range" description="" specification="" comment="" id="1028" state_mask="0x00000F0000007F88" uuid="1428218a-e213-4bc4-84fb-6b04e16fa1a4" testdata_id="1" type="Normal" testitem_state_mask="0x80">
 			<properties>
 			</properties>
 			<fault_injections>
