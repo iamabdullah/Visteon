@@ -1,0 +1,46 @@
+<functions tessy_version="4.2.6">
+ <files>
+  <file id="1" name="C:\Program Files\Razorcat\TESSY_4.2\Examples\IsValueInRange\is_val_in_range.c"/>
+ </files>
+ <function id="16777218" name="is_value_in_range" testobject="1" from="23,26" to="33,1" body_from="24,1" file="C:\Program Files\Razorcat\TESSY_4.2\Examples\IsValueInRange\is_val_in_range.c">
+  <flow>
+   <if condition_id="1" from="25,2" to="26,12">
+    <then>
+     <return from="26,3" to="26,12">
+      <statement text="n.a." from="26,10" to="26,12"/>
+     </return>
+    </then>
+    <else synthetic="1"/>
+   </if>
+   <if condition_id="4" from="28,2" to="29,12">
+    <then>
+     <return from="29,3" to="29,12">
+      <statement text="n.a." from="29,10" to="29,12"/>
+     </return>
+    </then>
+    <else synthetic="1"/>
+   </if>
+   <return from="31,2" to="31,12">
+    <statement text="n.a." from="31,9" to="31,12"/>
+   </return>
+  </flow>
+  <calls/>
+  <conditions>
+   <condition id="1" text="1" from="25,5" to="25,25">
+    <atom id="1" value="(v1 &#60; r1.range_start)"/>
+   </condition>
+   <condition id="4" text="2" from="28,5" to="28,42">
+    <atom id="2" value="(v1 &#62; (r1.range_start + r1.range_len))"/>
+   </condition>
+  </conditions>
+  <branches>
+   <statement id="-16777218"/>
+   <statement id="1"/>
+   <branch id="2" type="then" condition_id="1" C0="1" C1="1" from="26,3" to="26,12"/>
+   <branch id="3" type="else" condition_id="1" C0="0" C1="1" from="26,12" to="26,12"/>
+   <statement id="4"/>
+   <branch id="5" type="then" condition_id="4" C0="1" C1="1" from="29,3" to="29,12"/>
+   <branch id="6" type="else" condition_id="4" C0="0" C1="1" from="29,12" to="29,12"/>
+  </branches>
+ </function>
+</functions>

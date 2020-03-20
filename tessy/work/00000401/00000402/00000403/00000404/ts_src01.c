@@ -11,11 +11,25 @@
 /* stubfunction counters */
 #include "ts_stubcounter.h"
 
-// This is a very basic program to demonstrate the integration 
-// of Tessy and HiTOP, the debugger from Hitex.
-// (c) Hitex Systementwicklung GmbH 2001, www.hitex.de
-//
-// $Revision: 1$
+
+
+
+
+
+
+
+
+
+
+
+/* Instrumentation declarations */
+#include "tsteval.h"
+
+/* Current Testcase / Teststep and repeatcount*/
+extern TESSY_uint32   TS_CURRENT_TESTCASE;
+extern TESSY_uint32   TS_CURRENT_TESTSTEP;
+extern TESSY_uint8    TS_FAULT_INJECTION;
+extern long           TS_REPEAT_COUNT;
 
 struct range {int range_start; int range_len;};
 
@@ -23,27 +37,18 @@ typedef int value;
 
 typedef enum {no, yes} result;
 
-// Checks if r1.start <= v1 < (r1.start + r1.len),
-// e.g. r1.start = 5, r1.len = 2
-// ==> v1 == 4 ---> no
-//     v1 == 5 ---> yes
-//     v1 == 6 ---> yes
-//     v1 == 7 ---> no
-// However, the implementation is intentionally
-// erroneous: v1 == 7 results "yes" instead of "no"!
-//
-
 result is_value_in_range (struct range r1, value v1)
-{
-	if (v1 < r1.range_start)
-		return no;
+{TESSY_comm_function (16777218, 1, 0);{
+ if((TESSY_EXPR(1,2) && TESSY_EVAL((TESSY_ATOM(1, (unsigned char) (((v1 < r1.range_start)) ? 1 : 0))))))
+  return no;
 
-	if (v1 > (r1.range_start + r1.range_len))
-		return no;
+ if((TESSY_EXPR(4,5) && TESSY_EVAL((TESSY_ATOM(2, (unsigned char) (((v1 > (r1.range_start + r1.range_len))) ? 1 : 0))))))
+  return no;
 
-	return yes;
+ {TESSY_comm_return (-16777218); return yes;}
 
-}
+}}
+
 
 
 /****************************************************************/

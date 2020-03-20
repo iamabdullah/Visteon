@@ -1,0 +1,154 @@
+<coverage_data mode="testobject only">
+ <dc_tables>
+  <coverage_table id="1" coverage="100.00" row_count="2" reached_rows_count="2">
+   <row>
+    <column value="(v1 &#60; r1.range_start)"/>
+    <column value="Reached"/>
+   </row>
+   <row>
+    <column value="0"/>
+    <column value="X"/>
+   </row>
+   <row>
+    <column value="1"/>
+    <column value="X"/>
+   </row>
+  </coverage_table>
+  <coverage_table id="4" coverage="100.00" row_count="2" reached_rows_count="2">
+   <row>
+    <column value="(v1 &#62; (r1.range_start + r1.range_len))"/>
+    <column value="Reached"/>
+   </row>
+   <row>
+    <column value="0"/>
+    <column value="X"/>
+   </row>
+   <row>
+    <column value="1"/>
+    <column value="X"/>
+   </row>
+  </coverage_table>
+ </dc_tables>
+ <mcc_tables>
+  <coverage_table id="1" coverage="100.00" row_count="2" reached_rows_count="2">
+   <row>
+    <column value="(v1 &#60; r1.range_start)"/>
+    <column value="Reached"/>
+   </row>
+   <row>
+    <column value="0"/>
+    <column value="X"/>
+   </row>
+   <row>
+    <column value="1"/>
+    <column value="X"/>
+   </row>
+  </coverage_table>
+  <coverage_table id="4" coverage="100.00" row_count="2" reached_rows_count="2">
+   <row>
+    <column value="(v1 &#62; (r1.range_start + r1.range_len))"/>
+    <column value="Reached"/>
+   </row>
+   <row>
+    <column value="0"/>
+    <column value="X"/>
+   </row>
+   <row>
+    <column value="1"/>
+    <column value="X"/>
+   </row>
+  </coverage_table>
+ </mcc_tables>
+ <mcdc_tables>
+  <coverage_table id="1" coverage="100.00" row_count="2" reached_rows_count="2">
+   <row>
+    <column value="(v1 &#60; r1.range_start)"/>
+    <column value="Teststep"/>
+   </row>
+   <row>
+    <column value="0"/>
+    <column value="1.1"/>
+   </row>
+   <row>
+    <column value="1"/>
+    <column value="5.1"/>
+   </row>
+  </coverage_table>
+  <coverage_table id="4" coverage="100.00" row_count="2" reached_rows_count="2">
+   <row>
+    <column value="(v1 &#62; (r1.range_start + r1.range_len))"/>
+    <column value="Teststep"/>
+   </row>
+   <row>
+    <column value="0"/>
+    <column value="1.1"/>
+   </row>
+   <row>
+    <column value="1"/>
+    <column value="2.1"/>
+   </row>
+  </coverage_table>
+ </mcdc_tables>
+ <c0_data coverage="100.00" number_branches="5" reached_branches="5">
+<teststep id="1.1">
+ <function id="16777218" count="1"/>
+ <statement id="1"/>
+ <branch id="3" synthetic="1" count="0"/>
+ <statement id="4"/>
+ <branch id="6" synthetic="1" count="0"/>
+ <statement id="-16777218"/>
+</teststep>
+<teststep id="2.1">
+ <function id="16777218" count="1"/>
+ <statement id="1"/>
+ <branch id="3" synthetic="1" count="0"/>
+ <statement id="4"/>
+ <branch id="5" count="1"/>
+</teststep>
+<teststep id="3.1">
+ <function id="16777218" count="1"/>
+ <statement id="1"/>
+ <branch id="3" synthetic="1" count="0"/>
+ <statement id="4"/>
+ <branch id="5" count="1"/>
+</teststep>
+<teststep id="4.1">
+ <function id="16777218" count="1"/>
+ <statement id="1"/>
+ <branch id="3" synthetic="1" count="0"/>
+ <statement id="4"/>
+ <branch id="5" count="1"/>
+</teststep>
+<teststep id="5.1">
+ <function id="16777218" count="1"/>
+ <statement id="1"/>
+ <branch id="2" count="1"/>
+</teststep>
+ </c0_data>
+ <c1_data coverage="100.00" number_branches="4" reached_branches="4">
+<teststep id="1.1">
+ <function id="16777218" count="1"/>
+ <branch id="3" count="1"/>
+ <branch id="6" count="1"/>
+</teststep>
+<teststep id="2.1">
+ <function id="16777218" count="1"/>
+ <branch id="3" count="1"/>
+ <branch id="5" count="1"/>
+</teststep>
+<teststep id="3.1">
+ <function id="16777218" count="1"/>
+ <branch id="3" count="1"/>
+ <branch id="5" count="1"/>
+</teststep>
+<teststep id="4.1">
+ <function id="16777218" count="1"/>
+ <branch id="3" count="1"/>
+ <branch id="5" count="1"/>
+</teststep>
+<teststep id="5.1">
+ <function id="16777218" count="1"/>
+ <branch id="2" count="1"/>
+</teststep>
+ </c1_data>
+</coverage_data>

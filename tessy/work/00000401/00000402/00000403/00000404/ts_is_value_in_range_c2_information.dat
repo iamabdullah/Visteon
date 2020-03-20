@@ -1,0 +1,16 @@
+DateTime: 20.03.2020 15:35:10
+File: C:\Program Files\Razorcat\TESSY_4.2\Examples\IsValueInRange\is_val_in_range.c
+Function: is_value_in_range
+Id: 16777218
+Return: 1
+C1Branches: 4
+C0Branches: 2
+Synthetic: 3,6
+Statements: 1
+Condition: 1 25 5 0
+Atom: 1 (v1 < r1.range_start)
+Expression: 1
+Statements: 4
+Condition: 4 28 5 0
+Atom: 2 (v1 > (r1.range_start + r1.range_len))
+Expression: 2

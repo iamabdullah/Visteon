@@ -1,0 +1,51 @@
+*******************************************************************************
+* MODULE                   source
+* TESTOBJECT               is_value_in_range
+*******************************************************************************
+* MODE OF INSTRUMENTATION  testobject only
+* TESSY VERSION            4.2.6
+* DATE OF INSTRUMENTATION  20.03.2020 15:35:10
+*******************************************************************************
+* DC-COVERAGE              100.00%
+*******************************************************************************
+* DECISIONS                2
+* UNREACHED DECISIONS      0
+* REACHED DECISIONS        2
+*******************************************************************************
+* SOURCE(S):
+* C:\Program Files\Razorcat\TESSY_4.2\Examples\IsValueInRange\is_val_in_range.c
+*******************************************************************************
+
+
+
+   File     : C:\Program Files\Razorcat\TESSY_4.2\Examples\IsValueInRange\is_val_in_range.c
+   Function : is_value_in_range
+   Line     : 25
+   Decision : (v1 < r1.range_start)
+   Coverage : 100.00%
+
+   | Result |
+   +--------+---
+   |   0    | X
+   |   1    | X
+
+
+*******************************************************************************
+
+
+
+   File     : C:\Program Files\Razorcat\TESSY_4.2\Examples\IsValueInRange\is_val_in_range.c
+   Function : is_value_in_range
+   Line     : 28
+   Decision : (v1 > (r1.range_start + r1.range_len))
+   Coverage : 100.00%
+
+   | Result |
+   +--------+---
+   |   0    | X
+   |   1    | X
+
+
+*******************************************************************************
+
+
